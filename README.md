@@ -26,10 +26,6 @@ A beautiful and responsive age calculator built with HTML, CSS, and JavaScript. 
 - JavaScript (ES6)
 - Google Fonts (Poppins)
 
-## 📸 Screenshots
-
-![Age Calculator Screenshot](screenshot.png)
-
 ## 🔧 How to Use
 
 ### Single Date Mode:
