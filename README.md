@@ -17,7 +17,7 @@ A beautiful and responsive age calculator built with HTML, CSS, and JavaScript. 
 
 ## 🚀 Live Demo
 
-[Try it Live](https://neyajsayari.github.io/age-calculator/)
+[Try it Live](https://neyajsayari.github.io/Age-calculator/)
 
 ## 🛠️ Technologies Used
 
