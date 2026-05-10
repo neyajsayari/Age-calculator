@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="icon-container">
+                <div class="icon">🎂</div>
+            </div>
+            
+            <h1>Age Calculator</h1>
+            <p class="subtitle">Calculate age between any two dates</p>
+            
+            <!-- Mode Toggle -->
+            <div class="mode-toggle">
+                <button class="mode-btn active" onclick="switchMode('single')">Single Date</button>
+                <button class="mode-btn" onclick="switchMode('range')">Date Range</button>
+            </div>
+            
+            <!-- Single Date Mode -->
+            <div class="mode-content" id="singleMode">
+                <div class="input-wrapper">
+                    <div class="input-group">
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <input type="date" id="singleDob" placeholder="Select your date of birth">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Date Range Mode -->
+            <div class="mode-content" id="rangeMode" style="display: none;">
+                <div class="input-wrapper">
+                    <label class="input-label">Start Date (Birth)</label>
+                    <div class="input-group">
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <input type="date" id="startDate" placeholder="Select start date">
+                    </div>
+                </div>
+                
+                <div class="date-arrow">⬇</div>
+                
+                <div class="input-wrapper">
+                    <label class="input-label">End Date</label>
+                    <div class="input-group">
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <input type="date" id="endDate" placeholder="Select end date">
+                    </div>
+                </div>
+            </div>
+            
+            <button onclick="calculateAge()" class="calculate-btn">
+                <span class="btn-text">Calculate Age</span>
+                <span class="btn-icon">→</span>
+            </button>
+            
+            <div class="result-container" id="result">
+                <div class="placeholder-text">
+                    <span class="placeholder-icon">⏳</span>
+                    <p>Your age will appear here</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Made by Neyaj ❤</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
